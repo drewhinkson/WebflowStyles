@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webflow Style Changer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Webflow Style Changer</h1>
+
+        <!-- Font Size Control -->
+        <div class="control">
+            <label for="fontSizeDropdown">Font Size</label>
+            <select id="fontSizeDropdown">
+                <option value="12px">12px</option>
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+            </select>
+        </div>
+
+        <!-- Font Color Control -->
+        <div class="control">
+            <label for="fontColorDropdown">Font Color</label>
+            <select id="fontColorDropdown">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+            </select>
+            <input type="text" id="fontColorHex" placeholder="#000000">
+        </div>
+
+        <!-- Font Family Control -->
+        <div class="control">
+            <label for="fontFamilyDropdown">Font Family</label>
+            <select id="fontFamilyDropdown">
+                <!-- Populated via JavaScript -->
+            </select>
+        </div>
+
+        <!-- Apply Styles Button -->
+        <button id="submitStyles">Apply Styles</button>
+
+       
+        <!-- Combo Class Check Control -->
+<div class="control">
+  <label for="comboClassInput">Combo Class Name</label>
+  <input type="text" id="comboClassInput" placeholder="Enter combo class name">
+  <button id="checkComboClass">Check Combo Class</button>
+</div>
+
+
+        <!-- Feedback Message Display -->
+        <div id="feedbackMessage"></div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <label for="feedbackInput">Your Feedback</label>
+                <textarea id="feedbackInput" rows="4" placeholder="Enter your feedback here"></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
