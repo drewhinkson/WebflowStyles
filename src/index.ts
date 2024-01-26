@@ -145,7 +145,7 @@ async function checkComboClass(comboClassName: string): Promise<void> {
   }
 
   try {
-    const styles: Style[] = selectedElement.getStyles();
+     const styles: Style[] = (selectedElement as any).getStyles();
 
     const hasComboClass = styles.some((style) => style.getName() === comboClassName);
 
